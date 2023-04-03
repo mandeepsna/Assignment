@@ -11,5 +11,8 @@ export class AppComponent {
  {
       this.router.navigate([' ']);
  }
-
+ onBtnClick()
+ {
+   this.router.navigate(['/addnewuser'])
+ }
 }
