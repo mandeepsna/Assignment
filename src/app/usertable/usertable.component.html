@@ -1,0 +1,29 @@
+
+<div class="container mt-5">
+    <table class="table bg-dark text-white" >
+        <thead>
+          <tr >
+            <th scope="col">#</th>
+            <th scope="col">Image</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Email</th>
+            <th scope="col">Age</th>
+            <th scope="col">ContactNumber</th>
+            <th scope="col">DOB</th>
+          </tr>
+          <tr *ngFor="let p of posts">
+              <th>{{p.id}}</th>
+              <td> <img src="{{p.imageUrl}}" alt="Image not found" width="40px"></td>
+              <td>{{p.firstName}}</td>
+              <td>{{p.lastName}}</td>
+              <td>{{p.email}}</td>
+              <td>{{p.age}}</td>
+              <td>{{p.contactNumber}}</td>
+          
+              <td>{{p.dob}}</td>
+          </tr>
+        </thead>
+      
+      </table>
+</div>
