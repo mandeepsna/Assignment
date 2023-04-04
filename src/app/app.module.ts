@@ -7,12 +7,14 @@ import { UsertableComponent } from './usertable/usertable.component';
 import{HttpClientModule} from '@angular/common/http';
 import { AddnewuserComponent } from './addnewuser/addnewuser.component';
 import { FormsModule } from '@angular/forms';
+import { PolicydetailsComponent } from './policydetails/policydetails.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsertableComponent,
-    AddnewuserComponent
+    AddnewuserComponent,
+    PolicydetailsComponent
   ],
   imports: [
     BrowserModule,

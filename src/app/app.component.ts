@@ -8,11 +8,8 @@ import { Route, Router } from '@angular/router';
 export class AppComponent {
   title = 'Assignment';
   constructor(private router:Router )
- {
-      this.router.navigate([' ']);
- }
- onBtnClick()
- {
-   this.router.navigate(['/addnewuser'])
+{
+    this.router.navigate([' ']);
  }
 }
+

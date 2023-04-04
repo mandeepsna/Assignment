@@ -1,0 +1,24 @@
+<div class="container mt-5">
+  <table class="table bg-dark text-white">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Dependents</th>
+        <th scope="col">Policy Name</th>
+        <th scope="col">Claimed Amount</th>
+        <th scope="col">Salary</th>
+        <th scope="col">Policy Amt</th>
+        <th scope="col">Balance-Left</th>
+      </tr>
+      <tr *ngFor="let e of employee ; let i=index">
+        <th>{{e.id}}</th>
+        <td>{{e.numberOfDependents}}</td>
+        <td>{{e.policyName}}</td>
+        <td>{{e.claimedAmount}}</td>
+        <td>{{e.salary}}</td>
+        <td> {{getTotal(i)}}</td>
+        <td>{{getTotal(i) -e.claimedAmount}} </td>
+      </tr>
+    </thead>
+  </table>
+</div>

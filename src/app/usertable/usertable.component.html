@@ -11,6 +11,7 @@
             <th scope="col">Age</th>
             <th scope="col">ContactNumber</th>
             <th scope="col">DOB</th>
+            <th scope="col">Actions</th>
           </tr>
           <tr *ngFor="let p of posts">
               <th>{{p.id}}</th>
@@ -22,8 +23,16 @@
               <td>{{p.contactNumber}}</td>
           
               <td>{{p.dob}}</td>
+              <td> <a  href=""> <img src="/assets/edit.png" alt="" width="30px" (click)=" onBtnClick()" > </a></td>
+        
+              <!-- <router-outlet></router-outlet> -->
+           <!-- <td> <button routerLink="addnewuser">Delete </button></td> -->
+              <td> <a href=""><img src="/assets/delete.png" alt="" width="30px"> </a></td>
           </tr>
         </thead>
       
       </table>
+      <div class="d-flex justify-content-end container ">
+       <button class="btn btn-primary " (click)="onBtnClick()" >Add New User </button>  
+</div>
 </div>

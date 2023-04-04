@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { EmpService } from '../services/emp.service';
+import { Router ,Route, OutletContext} from '@angular/router';
 @Component({
   selector: 'app-usertable',
   templateUrl: './usertable.component.html',
@@ -7,7 +8,15 @@ import { EmpService } from '../services/emp.service';
 })
 export class UsertableComponent {
 posts:any;
-constructor(private  post:EmpService) { }
+constructor(private  post:EmpService,private router:Router ) {
+ 
+ }
+ onBtnClick()
+ {
+   this.router.navigate(['/addnewuser'])
+ }
+
+ 
 
 ngOnInit()
 {
