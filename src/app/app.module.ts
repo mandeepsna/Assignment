@@ -8,13 +8,15 @@ import{HttpClientModule} from '@angular/common/http';
 import { AddnewuserComponent } from './addnewuser/addnewuser.component';
 import { FormsModule } from '@angular/forms';
 import { PolicydetailsComponent } from './policydetails/policydetails.component';
+import { ChartsComponent } from './charts/charts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsertableComponent,
     AddnewuserComponent,
-    PolicydetailsComponent
+    PolicydetailsComponent,
+    ChartsComponent
   ],
   imports: [
     BrowserModule,

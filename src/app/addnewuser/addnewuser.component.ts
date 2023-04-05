@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./addnewuser.component.css']
 })
 export class AddnewuserComponent {
+  dataFormHub:any={
+
+
+  }
 save(data:any)
 {
       console.log(data);
