@@ -6,7 +6,7 @@ import { Route, Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Assignment';
+  title = ' First Asmt ';
   constructor(private router:Router )
 {
     this.router.navigate([' ']);
