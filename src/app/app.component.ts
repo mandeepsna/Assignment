@@ -9,7 +9,7 @@ export class AppComponent {
   title = ' First Asmt ';
   constructor(private router:Router )
 {
-    this.router.navigate([' ']);
+    // this.router.navigate([' ']);
  }
 }
 

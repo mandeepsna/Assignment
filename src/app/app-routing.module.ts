@@ -6,11 +6,12 @@ import { PolicydetailsComponent } from './policydetails/policydetails.component'
 import { ChartsComponent } from './charts/charts.component';
 
 const routes: Routes = [
-  {path:' ' ,component:UsertableComponent ,pathMatch:'full' },
+  {path:'', redirectTo:'EmployeeList' ,pathMatch:'full' },
   {path:'EmployeeList' ,component:UsertableComponent},
   {path:'addnewuser',component:AddnewuserComponent},
   {path:'MedicalDetails',component:PolicydetailsComponent},
   {path:'Charts',component:ChartsComponent},
+  {path:'EmployeeList/addnewuser',component:AddnewuserComponent},
 ];
 
 @NgModule({

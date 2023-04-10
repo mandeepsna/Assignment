@@ -15,7 +15,10 @@ constructor(private  post:EmpService,private router:Router ) {
  {
    this.router.navigate(['/addnewuser'])
  }
-
+delete(index:number)
+{
+   this.posts.splice(index,1)
+}
  
 
 ngOnInit()
