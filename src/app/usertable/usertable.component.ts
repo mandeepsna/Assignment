@@ -8,24 +8,28 @@ import { Router ,Route, OutletContext} from '@angular/router';
 })
 export class UsertableComponent {
 posts:any;
-constructor(private  post:EmpService,private router:Router ) {
+empid:any;
+constructor(private  post:EmpService,private route:Router ) {
  
  }
  onBtnClick()
  {
-   this.router.navigate(['/addnewuser'])
+    
+  this.route.navigate(['/edit',1])
  }
 delete(index:number)
 {
-   this.posts.splice(index,1)
+   this.posts.splice(index,1);
 }
  
 
 ngOnInit()
 {
-    this.post.getdata().subscribe(response=>
+  
+  this.post.getdata().subscribe(response=>
       {
          this.posts=response;
       })
+     
 }
 }
